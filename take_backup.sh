@@ -12,7 +12,7 @@ SITE_DB_NAME=$(grep DB_NAME ${SITE_WEBROOT}/wp-config.php | cut -d "'" -f 4)
 SITE_DB_USER=$(grep DB_USER ${SITE_WEBROOT}/wp-config.php | cut -d "'" -f 4)
 SITE_DB_PASS=$(grep DB_PASS ${SITE_WEBROOT}/wp-config.php | cut -d "'" -f 4)
 SITE_DB_BACKUP_PATH="${SITE_WEBROOT}/reset-backup/${SITE_DB_NAME}.sql"
-GIT_DIR="${SITE_WEBROOT}/htdocs/wp-content/"
+GIT_DIR="${SITE_WEBROOT}/htdocs/wp-content/uploads"
 LOG_PATH='/var/log/resetcron.log'
 
 
