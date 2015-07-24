@@ -10,9 +10,9 @@ Reset wordpress to default state
 
 3. Do that same in `reset_wordpress.sh`.
 
-4. Run `bash take_backup.sh`
+4. Run `sudo bash take_backup.sh`
 
-5. Add file to crontab using `crontab -e`
+5. Add file to crontab using `sudo crontab -e`
 Example:  `10 1 * * * bash /wordpress-reset/reset_wordpress.sh`
 
 This will reset your database and upload folder every day at 1.10 AM.
